@@ -1,0 +1,1 @@
+# Frontend Engineer Testing - Slicing Template MotoGP Ticket
