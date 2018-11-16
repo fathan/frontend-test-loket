@@ -1,0 +1,31 @@
+{
+  "name": "frontend-test-loket-slicing-template",
+  "version": "1.0.0",
+  "description": "Frontend Engineer Test @Loket.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fathan/frontend-test-loket.git"
+  },
+  "keywords": [
+    "Javascript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Fathan Rohman <karir.fathan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fathan/frontend-test-loket/issues"
+  },
+  "homepage": "https://github.com/fathan/frontend-test-loket#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-serve": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}
