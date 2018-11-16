@@ -1,5 +1,7 @@
 # Frontend Engineer Testing - Slicing Template MotoGP Ticket
 
+Demo click : http://loket-frontend-test-slicing.fathanrohman.com
+
 ## Project setup
 ```
 npm install

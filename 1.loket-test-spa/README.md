@@ -1,5 +1,7 @@
 # Frontend Engineer Testing - Single Page Application with Vue.js
 
+Demo click : http://loket-frontend-test-spa.fathanrohman.com
+
 ## Project setup
 ```
 npm install

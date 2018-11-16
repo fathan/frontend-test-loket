@@ -16,6 +16,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .block-container {
   display: flex;
   display: -ms-flexbox;
