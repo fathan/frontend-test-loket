@@ -1,8 +1,5 @@
 <template>
   <div class="container-home">
-    <div class="container-home__title-top">
-      <div v-html="'Frontend Engineer testing for apply @Loket.com - By Fathan Rohman (karir.fathan@gmail.com)'"></div>
-    </div>
     <div class="container-home__list-action">
       <div
         class="listing"
