@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="box-detail">
-      {{film}}
+      <pre>{{film}}</pre>
     </div>
   </div>
 </template>

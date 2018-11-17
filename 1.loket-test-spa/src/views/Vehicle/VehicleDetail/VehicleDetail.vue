@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="box-detail">
-      {{vehicle}}
+      <pre>{{vehicle}}</pre>
     </div>
   </div>
 </template>

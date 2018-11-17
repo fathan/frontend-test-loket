@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="box-detail">
-      {{planet}}
+      <pre>{{planet}}</pre>
     </div>
   </div>
 </template>

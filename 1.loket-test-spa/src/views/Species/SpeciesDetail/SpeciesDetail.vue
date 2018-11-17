@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="box-detail">
-      {{species}}
+      <pre>{{species}}</pre>
     </div>
   </div>
 </template>

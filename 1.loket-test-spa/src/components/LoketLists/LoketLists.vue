@@ -1,5 +1,17 @@
 <template>
   <div class="box-lists columns is-multiline">
+    <div class="column is-12">
+      <router-link :to="{ path: '/' }">
+        Home
+      </router-link>
+      /
+      <span v-if="category === 'Film'">Film</span>
+      <span v-if="category === 'People'">People</span>
+      <span v-if="category === 'Planet'">Planet</span>
+      <span v-if="category === 'Species'">Species</span>
+      <span v-if="category === 'Starship'">Starship</span>
+      <span v-if="category === 'Vehicle'">Vehicle</span>
+    </div>
     <div
       class="column is-one-quarter"
       v-for="(data, index) in listData"
@@ -31,20 +43,8 @@ export default {
   },
   methods: {
     handleDetail (dataUrl, dataCategory) {
-      let urlString = dataUrl
-      let url = new URL(urlString)
-      let pathName = url.pathname
-      
-      let number
-      if (dataCategory === 'Film') { number = pathName.replace('/api/films/', '') }
-      if (dataCategory === 'People') { number = pathName.replace('/api/people/', '') }
-      if (dataCategory === 'Planet') { number = pathName.replace('/api/planets/', '') }
-      if (dataCategory === 'Species') { number = pathName.replace('/api/species/', '') }
-      if (dataCategory === 'Starship') { number = pathName.replace('/api/starships/', '') }
-      if (dataCategory === 'Vehicle') { number = pathName.replace('/api/vehicles/', '') }
-      
-      let id = number.replace('/', '')
-      
+      let id = this.getIdOnUrlString(dataUrl, dataCategory)
+
       if (dataCategory === 'Film') { this.$router.push({ path: `/film/${id}` }) }
       if (dataCategory === 'People') { this.$router.push({ path: `/people/${id}` }) }
       if (dataCategory === 'Planet') { this.$router.push({ path: `/planet/${id}` }) }

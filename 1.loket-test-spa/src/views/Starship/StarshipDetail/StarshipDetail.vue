@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="box-detail">
-      {{starship}}
+      <pre>{{starship}}</pre>
     </div>
   </div>
 </template>
