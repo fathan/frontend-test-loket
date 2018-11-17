@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="loket-starwars-wrapper">
     <router-view/>
   </div>
 </template>

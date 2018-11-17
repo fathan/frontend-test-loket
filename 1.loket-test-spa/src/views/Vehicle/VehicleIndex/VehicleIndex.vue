@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import { CONFIG } from '@/configuration'
 export default {
   mounted () {
-    this.$store.dispatch('getByUrlApi', `${CONFIG.API_URL}/vehicles/`)
+    this.$store.dispatch('getByUrlApi', `${this.urlApi()}/vehicles/`)
       .then(
         response => {
           console.log(response)
