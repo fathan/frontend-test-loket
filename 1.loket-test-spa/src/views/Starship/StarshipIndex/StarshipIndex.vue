@@ -1,16 +1,25 @@
 <template>
-  <div>
-    Starships
+  <div class="container">
+    <loket-lists
+      :list-data="starships"
+      category="Starship"
+    >
+    </loket-lists>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      starships: []
+    }
+  },
   mounted () {
     this.$store.dispatch('getByUrlApi', `${this.urlApi()}/starships/`)
       .then(
         response => {
-          console.log(response)
+          this.starships = response.results
         }
       )
   }

@@ -1,16 +1,25 @@
 <template>
-  <div>
-    Planets
+  <div class="container">
+    <loket-lists
+      :list-data="planets"
+      category="Planet"
+    >
+    </loket-lists>
   </div>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      planets: []
+    }
+  },
   mounted () {
     this.$store.dispatch('getByUrlApi', `${this.urlApi()}/planets/`)
       .then(
         response => {
-          console.log(response)
+          this.planets = response.results
         }
       )
   }

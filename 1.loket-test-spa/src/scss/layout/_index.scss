@@ -1,9 +1,11 @@
 .loket-starwars-wrapper {
+  width: 100%;
   height: 100%;
   overflow-y: auto;
 
   @import 'blank';
   @import 'header';
   @import 'content';
-  @import 'page/home'
+  @import 'page/home';
+  @import 'page/lists';
 }
