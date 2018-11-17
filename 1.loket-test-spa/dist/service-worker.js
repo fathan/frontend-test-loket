@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.0dacadff8ab3cb46d90778078ca1f7ab.js"
+  "/precache-manifest.e9eec7747fd9ff16a86da99322a3f8be.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "1.loket-test-spa"});
