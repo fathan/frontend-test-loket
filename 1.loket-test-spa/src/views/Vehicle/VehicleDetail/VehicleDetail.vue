@@ -18,7 +18,16 @@ export default {
     this.$store.dispatch('getByUrlApi', `${this.urlApi()}/vehicles/${id}/`)
       .then(
         response => {
-          this.vehicle = response
+          let xhrRes = response
+          this.vehicle = xhrRes
+
+          // CUSTOM PEOPLE
+          let arrayPeople = this.getDataFromListUrlPeople(xhrRes.pilots)
+          this.vehicle.pilots = arrayPeople
+
+          // CUSTOM FILMS
+          let arrayFilm = this.getDataFromListUrlFilm(xhrRes.films)
+          this.vehicle.films = arrayFilm
         }
       )
   }

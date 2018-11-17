@@ -18,7 +18,16 @@ export default {
     this.$store.dispatch('getByUrlApi', `${this.urlApi()}/planets/${id}/`)
       .then(
         response => {
-          this.planet = response
+          let xhrRes = response
+          this.planet = xhrRes
+
+          // CUSTOM RESIDENTS
+          let arrayPeople = this.getDataFromListUrlPeople(xhrRes.residents)
+          this.planet.residents = arrayPeople
+
+          // CUSTOM FILMS
+          let arrayFilm = this.getDataFromListUrlFilm(xhrRes.films)
+          this.planet.films = arrayFilm
         }
       )
   }

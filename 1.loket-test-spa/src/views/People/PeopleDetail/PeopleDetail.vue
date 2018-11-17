@@ -26,60 +26,20 @@ export default {
           this.people = xhrRes
 
           // CUSTOM FILMS
-          let arrayFilm = []
-          let xhrFilms = xhrRes.films
-          for (let i = 0; i < xhrFilms.length; i++) {
-            let id = this.getIdOnUrlString(xhrFilms[i], 'Film')
-            this.$store.dispatch('getByUrlApi', `${this.urlApi()}/films/${id}/`)
-              .then(
-                responseFilms => {
-                  arrayFilm.push(responseFilms)
-                }
-              )
-          }
-          this.people.films = arrayFilm //Inject data to array films
+          let arrayFilm = this.getDataFromListUrlFilm(xhrRes.films)
+          this.people.films = arrayFilm
 
           // CUSTOM SPECIES
-          let arraySpecies = []
-          let xhrSpecies = xhrRes.species
-          for (let i = 0; i < xhrSpecies.length; i++) {
-            let id = this.getIdOnUrlString(xhrSpecies[i], 'Species')
-            this.$store.dispatch('getByUrlApi', `${this.urlApi()}/species/${id}/`)
-              .then(
-                responseSpecies => {
-                  arraySpecies.push(responseSpecies)
-                }
-              )
-          }
-          this.people.species = arraySpecies //Inject data to array species
+          let arraySpecies = this.getDataFromListUrlSpecies(xhrRes.species)
+          this.people.species = arraySpecies
 
           // CUSTOM VEHICLES
-          let arrayVehicle = []
-          let xhrVehicles = xhrRes.vehicles
-          for (let i = 0; i < xhrVehicles.length; i++) {
-            let id = this.getIdOnUrlString(xhrVehicles[i], 'Vehicle')
-            this.$store.dispatch('getByUrlApi', `${this.urlApi()}/vehicles/${id}/`)
-              .then(
-                responseVehicles => {
-                  arrayVehicle.push(responseVehicles)
-                }
-              )
-          }
-          this.people.vehicles = arrayVehicle //Inject data to array vehicles
+          let arrayVehicle = this.getDataFromListUrlVehicle(xhrRes.vehicles)
+          this.people.vehicles = arrayVehicle
 
           // CUSTOM STARSHIPS
-          let arrayStarships = []
-          let xhrStarships = xhrRes.starships
-          for (let i = 0; i < xhrStarships.length; i++) {
-            let id = this.getIdOnUrlString(xhrStarships[i], 'Starship')
-            this.$store.dispatch('getByUrlApi', `${this.urlApi()}/starships/${id}/`)
-              .then(
-                responseStarships => {
-                  arrayStarships.push(responseStarships)
-                }
-              )
-          }
-          this.people.starships = arrayStarships //Inject data to array starships
+          let arrayStarships = this.getDataFromListUrlStarships(xhrRes.starships)
+          this.people.starships = arrayStarships
         }
       )
   }

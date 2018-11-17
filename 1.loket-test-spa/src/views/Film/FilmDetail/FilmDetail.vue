@@ -18,7 +18,28 @@ export default {
     this.$store.dispatch('getByUrlApi', `${this.urlApi()}/films/${id}/`)
       .then(
         response => {
-          this.film = response
+          let xhrRes = response
+          this.film = xhrRes
+
+          // CUSTOM PEOPLE
+          let arrayPeople = this.getDataFromListUrlPeople(xhrRes.characters)
+          this.film.characters = arrayPeople
+
+          // CUSTOM PLANETS
+          let arrayPlanet = this.getDataFromListUrlPlanets(xhrRes.planets)
+          this.film.characters = arrayPlanet
+
+          // CUSTOM STARSHIPS
+          let arrayStarships = this.getDataFromListUrlStarships(xhrRes.starships)
+          this.film.starships = arrayStarships
+
+          // CUSTOM VEHICLES
+          let arrayVehicle = this.getDataFromListUrlVehicle(xhrRes.vehicles)
+          this.film.vehicles = arrayVehicle
+
+          // CUSTOM SPECIES
+          let arraySpecies = this.getDataFromListUrlSpecies(xhrRes.species)
+          this.film.vehicles = arraySpecies
         }
       )
   }
