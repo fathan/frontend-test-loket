@@ -4,7 +4,6 @@ import VehicleDetail from '@/views/Vehicle/VehicleDetail/VehicleDetail'
 
 export const VehicleRender = {
   path: '/vehicle',
-  name: 'Vehicle',
   component: Vehicle,
   children: [
     {

@@ -4,7 +4,6 @@ import StarshipDetail from '@/views/Starship/StarshipDetail/StarshipDetail'
 
 export const StarshipRender = {
   path: '/starship',
-  name: 'Starship',
   component: Starship,
   children: [
     {

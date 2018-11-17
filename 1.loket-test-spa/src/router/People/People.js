@@ -4,7 +4,6 @@ import PeopleDetail from '@/views/People/PeopleDetail/PeopleDetail'
 
 export const PeopleRender = {
   path: '/people',
-  name: 'People',
   component: People,
   children: [
     {

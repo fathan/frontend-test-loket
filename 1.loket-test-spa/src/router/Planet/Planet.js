@@ -4,7 +4,6 @@ import PlanetDetail from '@/views/Planet/PlanetDetail/PlanetDetail'
 
 export const PlanetRender = {
   path: '/planet',
-  name: 'Planet',
   component: Planet,
   children: [
     {

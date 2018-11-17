@@ -4,7 +4,6 @@ import SpeciesDetail from '@/views/Species/SpeciesDetail/SpeciesDetail'
 
 export const SpeciesRender = {
   path: '/species',
-  name: 'Species',
   component: Species,
   children: [
     {

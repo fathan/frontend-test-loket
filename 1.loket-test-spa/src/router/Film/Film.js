@@ -4,7 +4,6 @@ import FilmDetail from '@/views/Film/FilmDetail/FilmDetail'
 
 export const FilmRender = {
   path: '/film',
-  name: 'Film',
   component: Film,
   children: [
     {
