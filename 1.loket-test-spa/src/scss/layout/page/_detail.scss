@@ -3,4 +3,17 @@
   border-radius: 5px;
   background-color: $white;
   margin-bottom: 10px!important;
+
+  .table td, .table th {
+    border: 0;
+    font-family: 'Kodchasan', sans-serif;
+  }
+  
+  &__title {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+  }
 }
