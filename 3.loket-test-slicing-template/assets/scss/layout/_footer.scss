@@ -3,16 +3,22 @@
   width: 100%;
   text-align: center;
   background-color: $red-dark;
-  padding: 10px 0;
+  padding: 20px 0;
 
   &__image {
     margin: auto;
-    width: 100px;
-    margin-bottom: 10px;
+
+    span {
+      color: $white;
+      font-size: 14px;
+      margin-right: 10px;
+      display: inline-block;
+      font-weight: 300;
+    }
 
     img {
-      width: 100%;
-      display: block;
+      width: 100px;
+      margin-top: -10px;
     }
   }
 }

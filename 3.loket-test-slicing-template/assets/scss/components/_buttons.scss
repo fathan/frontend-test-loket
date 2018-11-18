@@ -5,7 +5,8 @@
 */
 $colors: (black: $black,
           white: $white,
-          grey-medium: $grey-medium);
+          grey-medium: $grey-medium,
+          red-dark: $red-dark);
 /**
 *
 * BACKGROUND COLOR
@@ -72,14 +73,13 @@ $colors: (black: $black,
       background-color: $c!important;
       border: 1px solid $c!important;
       color: $white!important;
-      opacity: 0.8;
 
       &:hover { 
         background-color: $c!important;
         // background-color: black !important;
         color: $white!important;
         // color: black !important;
-        opacity: 1;
+        opacity: 0.8;
       }
     }
   }

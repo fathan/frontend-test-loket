@@ -246,7 +246,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -276,7 +276,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -306,7 +306,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -336,7 +336,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -366,7 +366,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -396,7 +396,7 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                    <button type="button" class="btn button--red-dark padding--button">
                       BUY TICKET
                     </button>
                   </div>
@@ -418,18 +418,95 @@
   <!-- ./SCOPE TICKET CATEGORY -->
 
   <!-- SCOPE CONTACTS -->
+  <section id="maps-app"></section>
+  <!-- ./SCOPE CONTACTS -->
+
+  <!-- SCOPE CONTACTS -->
   <section class="section contacts-app">
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="contacts-app__box-contact">
+            <div class="title">Get In Touch</div>
+            <div class="subtitle">
+              Have a question about ticketing MotoGP? Need talk to customer service? Have a great back to you soon as we can.
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="Name" class="text--bold">Your Name</label>
+                <input type="text" name="Name" class="form-control form-control--line" id="Name" placeholder="" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="Email" class="text--bold">Email Address</label>
+                <input type="text" name="Email" class="form-control form-control--line" id="Email" placeholder="" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="Address" class="text--bold">Your Message</label>
+                <textarea name="Address" class="form-control form-control--line" id="" cols="30" rows="7" autocomplete="off"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="pull--left">
+                    <span class="color--red-dark">Reset Field</span>
+                  </div>
+                  <div class="pull--right">
+                    <button type="submit" class="btn button--red-dark padding--button">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="contacts-app__information-contact">
+            <p>
+              Have an urgent question about an order? Call our Contact Support at <span>+29 928 999 21</span> You can also get in touch on <a href="http://facebook.com">Facebook</a> and <a href="http://twitter.com">Twitter</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- ./SCOPE CONTACTS -->
 
   <!-- SCOPE FOOTER -->
   <footer class="footer-app">
     <div class="footer-app__image">
+      <span>A Ticketing Platform By</span>
       <img src="assets/images/logo-loket.png" alt="">
     </div>
   </footer>
   <!-- ./SCOPE FOOTER -->
+
+  <script>
+    function initMap() {
+      var cordinate = {lat: 2.762352, lng: 101.721630};
+      var map = new google.maps.Map(
+        document.getElementById('maps-app'), {
+          zoom: 15,
+          center: cordinate,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            position: google.maps.ControlPosition.TOP_CENTER
+          },
+          zoomControl: true,
+          zoomControlOptions: {
+            position: google.maps.ControlPosition.RIGHT_CENTER
+          },
+          scaleControl: true,
+          streetViewControl: true,
+          streetViewControlOptions: {
+            position: google.maps.ControlPosition.LEFT_TOP
+          },
+          fullscreenControl: true
+        }
+      );
+      var marker = new google.maps.Marker({position: cordinate, map: map});
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtkiMxt9tSY-aQ4Jvgr3IrXTQv4nbtR6Y&callback=initMap">
+  </script>
 </body>
 
 </html>
