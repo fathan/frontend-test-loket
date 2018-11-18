@@ -1,0 +1,130 @@
+/**
+*
+* VARIABLE COLORING
+*
+*/
+$colors: (black: $black,
+          white: $white,
+          grey-medium: $grey-medium);
+/**
+*
+* BACKGROUND COLOR
+*
+*/
+.bg-color {
+  @each $i, $c in $colors {
+    &--#{$i} {
+      background-color: $c!important;
+    }
+  }
+}
+
+/**
+*
+* COLOR
+*
+*/
+.color {
+  @each $i, $c in $colors {
+    &--#{$i} {
+      color: $c!important;
+    }
+  }
+}
+
+/**
+*
+* BORDER
+*
+*/
+// .border {
+//   @each $i, $c in $colors {
+//     &--#{$i} {
+//       border-color: $c!important;
+//     }
+//   }
+// }
+
+/**
+*
+* BORDER WITH COLOR
+*
+*/
+.border-color {
+  @each $i, $c in $colors {
+    &--#{$i} {
+      background-color: transparent;
+      border-color: $c!important;
+      color: $c!important;
+      opacity: 0.9;      
+    }
+  }
+}
+
+/**
+*
+* BUTTON COLOR
+*
+*/
+.button {
+  @each $i, $c in $colors {
+    &--#{$i} {
+      background-color: $c!important;
+      border: 1px solid $c!important;
+      color: $white!important;
+      opacity: 0.8;
+
+      &:hover { 
+        background-color: $c!important;
+        // background-color: black !important;
+        color: $white!important;
+        // color: black !important;
+        opacity: 1;
+      }
+    }
+  }
+
+  &:hover {
+    color: $white!important;
+    // color: black !important;
+  }
+
+  // &__redBtn {
+  //   background-color: red !important;
+  // }
+
+  // &__greenBtn {
+  //   background-color: transparent !important;
+  //   width:100px !important;
+  // }
+}
+
+/**
+*
+* BUTTON TRANSPARENT COLOR
+*
+*/
+.button-outline {
+  @each $i, $c in $colors {
+    &--#{$i} {
+      background-color: transparent;
+      border-color: $c!important;
+      color: $c!important;
+
+      &:hover {
+        background-color: $c!important;
+        color: $white!important;
+        opacity: 1;
+      }      
+    }
+  }
+}
+
+.bg-bright--gray {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+@for $i from 1 through 4 {
+  .item-#{$i} { left: 20px * $i; }
+}

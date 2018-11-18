@@ -1,15 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>LOKÉT Frontend Engineer - Slicing Template MotoGP Ticket</title>
 
   <link rel="icon" href="https://www.loket.com/images/favicon/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/application.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
-<body>
-  Hello World Slicing
+
+<body class="loket-theme-wrapper">
+  <div class="banner-carousel">
+    <!-- SCOPE HEADER -->
+    <header class="header-app">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header-app__top">
+              <ul>
+                <li><a href="">Register</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-2">
+            <div class="header-app__logo">
+              <img src="assets/images/logo-motogp.png" alt="">
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="header-app__menu">
+              <ul>
+                <li><a href="">Tickets</a></li>
+                <li><a href="">Lineups</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ./SCOPE HEADER -->
+
+    <!-- SCOPE BANNER CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+        </div>
+      </div>
+    </div>
+    <!-- ./SCOPE BANNER CAROUSEL -->
+  </div>
+
+  <!-- SCOPE LATEST NEWS -->
+  <section class="section news-app">
+    <div class="container">
+      <div class="title-top--section">
+        <div class="title-top--section__title color--grey-medium">
+          Latest News
+        </div>
+        <a href="#" class="title-top--section__link-action color--grey-medium">
+          View All News
+          <i class="fa fa-play-circle"></i>
+        </a>
+      </div>
+    </div>
+    <div class="box-card--news">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="box-card--news__listing">
+              <div class="box-image">
+                <div class="box-image__image">
+                  <img src="assets/images/pic-1.png" alt="">
+                </div>
+              </div>
+              <div class="container-information">
+                <div class="box-information">
+                  <div class="box-information__box-time">
+                    <div class="timestamp">45 Minutes Ago</div>
+                    <a href="#" class="icon">
+                      <img src="assets/images/icon-redirect.png" alt="Detail Information">
+                    </a>
+                  </div>
+                  <a href="#" class="box-information__title">
+                    Exclusive: Rins on contracts, Argentina and targets
+                  </a>
+                  <div class="box-information__description">
+                    <p>
+                      After his first premier class podium last time out at termas de Rio Hondo, motogp.com down with Team Suzuki Ecstars Alex Rins...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="box-card--news__listing">
+              <div class="box-image">
+                <div class="box-image__image">
+                  <img src="assets/images/pic-2.png" alt="">
+                </div>
+              </div>
+              <div class="container-information">
+                <div class="box-information">
+                  <div class="box-information__box-time">
+                    <div class="timestamp">1 Days Ago</div>
+                    <a href="#" class="icon">
+                      <img src="assets/images/icon-redirect.png" alt="Detail Information">
+                    </a>
+                  </div>
+                  <a href="#" class="box-information__title">
+                    KTM find positives in Argentina
+                  </a>
+                  <div class="box-information__description">
+                    <p>
+                      Pol Esperago (RedBull KTM Factory Racing) crossed the line eleventh place at the Gran Premio Motul de la Republica Argentina to seal the manufacturer's first points of the...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="box-card--news__listing">
+              <div class="box-image">
+                <div class="box-image__image">
+                  <img src="assets/images/pic-3.png" alt="">
+                </div>
+              </div>
+              <div class="container-information">
+                <div class="box-information">
+                  <div class="box-information__box-time">
+                    <div class="timestamp">2 Days Ago</div>
+                    <a href="#" class="icon">
+                      <img src="assets/images/icon-redirect.png" alt="Detail Information">
+                    </a>
+                  </div>
+                  <a href="#" class="box-information__title">
+                    Exclusive interview: Cal Crutchlow on the top of the world
+                  </a>
+                  <div class="box-information__description">
+                    <p>
+                      Cal Crutchlow (LCR Honda Castrol) is on top of the world this weak with three good reasons to celebrate after a dramatic MotoGP race...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="box-card--news__listing">
+              <div class="box-image">
+                <div class="box-image__image">
+                  <img src="assets/images/pic-4.png" alt="">
+                </div>
+              </div>
+              <div class="container-information">
+                <div class="box-information">
+                  <div class="box-information__box-time">
+                    <div class="timestamp">3 Days Ago</div>
+                    <a href="#" class="icon">
+                      <img src="assets/images/icon-redirect.png" alt="Detail Information">
+                    </a>
+                  </div>
+                  <a href="#" class="box-information__title">
+                    Rabat: "We did a very goog job"
+                  </a>
+                  <div class="box-information__description">
+                    <p>
+                      Tito Rabat (Reale Avintia Racing) had an impressive weekend at the Gran Premio Motul de la Republica Argentina. Qualifying fourth on Saturday - after impressing in...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ./SCOPE LATEST NEWS -->
+
+  <!-- SCOPE TICKET CATEGORY -->
+  <section class="section category-ticket-app">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-top--section">
+            <div class="title-top--section__title color--white">
+              Ticket Category
+            </div>
+            <a href="#" class="title-top--section__link-action color--white">
+              View All Category
+              <i class="fa fa-play-circle"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">MotoGP VIP Village</div>
+                <div class="header__start-price">Start From: $1,258.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">Main Grandstand</div>
+                <div class="header__start-price">Start From: $72.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">Premium Roving</div>
+                <div class="header__start-price">Start From: $6,18.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">GA - Hillstand</div>
+                <div class="header__start-price">Start From: $25.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">main Grandstand - Marc Marquez</div>
+                <div class="header__start-price">Start From: $90.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="card-ticket--category">
+            <div class="card-ticket--category__box-clip">
+              &nbsp;
+            </div>
+            <div class="card-ticket--category__information">
+              <div class="header">
+                <div class="header__title">GA - Hillstand RIC Racing Team</div>
+                <div class="header__start-price">Start From: $14.00</div>
+              </div>
+              <div class="body">
+                <div class="row">
+                  <div class="col-md-8">
+                    <div class="body__description">
+                      Get Special price until December 1st, 2017. Invite your friends to get more change to win free tickets!
+                    </div>
+                    <div class="body__timestamp">
+                      Ends October 27th, 2017 | 11:00 PM
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-sm btn-block btn-danger">
+                      BUY TICKET
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="color--white">There are also available offline at Kitchenette Beachwalk, Bali & Tickets kaufen, France</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ./SCOPE TICKET CATEGORY -->
+
+  <!-- SCOPE CONTACTS -->
+  <section class="section contacts-app">
+    
+  </section>
+  <!-- ./SCOPE CONTACTS -->
+
+  <!-- SCOPE FOOTER -->
+  <footer class="footer-app">
+    <div class="footer-app__image">
+      <img src="assets/images/logo-loket.png" alt="">
+    </div>
+  </footer>
+  <!-- ./SCOPE FOOTER -->
 </body>
+
 </html>

@@ -7,10 +7,8 @@
  * Former     : Frontend Engineer
  * 
 */
-body,
-html {
-  padding: 0;
-  margin: 0;
-  background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+@import 'base/index';
+@import 'components/index';
+@import 'layout/index';
+@import 'responsive/index';

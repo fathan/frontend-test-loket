@@ -1,0 +1,65 @@
+.header-app {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+
+  &__top {
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+
+    ul {
+      padding-left: 0;
+      display: inline-block;
+
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 10px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          color: #FFFFFF;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &__logo {
+    display: inline-block;
+
+    img {
+      width: 150px;
+    }
+  }
+  &__menu {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+
+    ul {
+      padding-left: 0;
+      display: inline-block;
+
+      li {
+        list-style: none;
+        float: left;
+        margin-right: 40px;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          color: #FFFFFF;
+          text-transform: uppercase;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

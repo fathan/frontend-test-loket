@@ -1,0 +1,18 @@
+.footer-app {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $red-dark;
+  padding: 10px 0;
+
+  &__image {
+    margin: auto;
+    width: 100px;
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
