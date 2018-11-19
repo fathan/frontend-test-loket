@@ -78,3 +78,15 @@
     }
   }
 }
+
+.empty--data {
+  padding: 5em 0;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  
+  p {
+    font-weight: 600;
+    font-size: 30px;
+  }
+}

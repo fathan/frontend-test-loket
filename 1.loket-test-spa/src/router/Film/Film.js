@@ -9,12 +9,18 @@ export const FilmRender = {
     {
       path: '/',
       name: 'Film Index',
-      component: FilmIndex
+      component: FilmIndex,
+      meta: {
+        breadcrumb: 'Films'
+      }
     },
     {
       path: '/film/:id',
       name: 'Film Detail',
-      component: FilmDetail
+      component: FilmDetail,
+      meta: {
+        breadcrumb: routeParams => `Film Detail ${routeParams.id}`
+      }
     }
   ]
 }

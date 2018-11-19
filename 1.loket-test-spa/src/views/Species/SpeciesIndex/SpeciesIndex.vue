@@ -2,6 +2,7 @@
   <div class="container">
     <loket-lists
       :list-data="species"
+      @handle-search="handleSearch"
       category="Species"
     >
     </loket-lists>
@@ -22,6 +23,16 @@ export default {
           this.species = response.results
         }
       )
+  },
+  methods: {
+    handleSearch (data) {
+      this.$store.dispatch('getByUrlApi', `${this.urlApi()}/species/?search=${data.valueSearch}`)
+        .then(
+          response => {
+            this.species = response.results
+          }
+        )
+    }
   }
 }
 </script>
