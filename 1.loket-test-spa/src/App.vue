@@ -2,7 +2,7 @@
   <div class="loket-starwars-wrapper">
     <router-link :to="'/'">
       <div class="logo--top">
-        <img alt="Starwars" src="./assets/logo-starwars.jpg">
+        <img :src="require('@/assets/logo-starwars.jpg')" alt="">
       </div>
     </router-link>
     <router-view/>
