@@ -45,7 +45,7 @@
         @click="handleDetail(data.url, category)"
       >
         <div class="image">
-          <img src="https://vignette.wikia.nocookie.net/swfans/images/e/e2/Star_Wars_Title_Placeholder_001.jpg/revision/latest/scale-to-width-down/250?cb=20150312204827" alt="">
+          <img :src="require('@/assets/logo-starwars.jpg')" alt="">
         </div>
         <div class="title" v-if="category === 'Film'">{{data.title}}</div>
         <div class="title" v-else>{{data.name}}</div>

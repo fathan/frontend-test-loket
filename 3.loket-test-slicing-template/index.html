@@ -11,13 +11,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/application.css">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 
 <body class="loket-theme-wrapper">
+  <div id="top-zero"></div>
   <div class="banner-carousel">
     <!-- SCOPE HEADER -->
     <header class="header-app">
@@ -28,7 +25,17 @@
               <ul>
                 <li><a href="">Register</a></li>
                 <li><a href="">Login</a></li>
-                <li><a href="">English</a></li>
+                <li>
+                  <div class="dropdown dropdown--language">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      English
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">English</a>
+                      <a class="dropdown-item" href="#">Indonesia</a>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -48,6 +55,18 @@
                 <li><a href="">About</a></li>
               </ul>
             </div>
+            <div class="header-app__menu-mobile" onclick="openNav()">
+              <i class="fa fa-bars"></i>
+            </div>
+            <div id="myNav" class="overlay--menu">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay--menu__content">
+                <a href="#">Tickets</a>
+                <a href="#">Lineups</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -63,13 +82,169 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <img class="d-block image-banner" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="information-banner">
+                  <div class="information-banner__image-circuit">
+                    <div class="image">
+                      <img src="assets/images/sepang-circuit.png" alt="">
+                    </div>
+                  </div>
+                  <div class="information-banner__information">
+                    <div class="row">
+                      <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div class="flag">
+                          <img src="assets/images/malaysia.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="description">
+                          <div class="description__title">
+                            Sheel Motorcyle Grand Prix
+                          </div>
+                          <div class="description__time">
+                            04 - 08 November 2018, 07:30PM
+                          </div>
+                          <div class="description__code">
+                            14D 7H 34M 23S
+                          </div>
+                          <button
+                            type="button"
+                            class="btn button--red-dark padding--button"
+                            data-toggle="modal"
+                            data-target="#modal-add-to-cart"
+                          >
+                            BUY TICKET
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information-banner__rider">
+                    <div class="name">Ali Imron, 29</div>
+                    <div class="nationality">British Grand Prix, Britain</div>
+                  </div>
+                </div>
+                <div class="arrow--bottom">
+                  <div class="text-center">
+                    <img src="assets/images/arrow-bottom.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <img class="d-block image-banner" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="information-banner">
+                  <div class="information-banner__image-circuit">
+                    <div class="image">
+                      <img src="assets/images/sepang-circuit.png" alt="">
+                    </div>
+                  </div>
+                  <div class="information-banner__information">
+                    <div class="row">
+                      <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div class="flag">
+                          <img src="assets/images/malaysia.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="description">
+                          <div class="description__title">
+                            Sheel Motorcyle Grand Prix
+                          </div>
+                          <div class="description__time">
+                            04 - 08 November 2018, 07:30PM
+                          </div>
+                          <div class="description__code">
+                            14D 7H 34M 23S
+                          </div>
+                          <button
+                            type="button"
+                            class="btn button--red-dark padding--button"
+                            data-toggle="modal"
+                            data-target="#modal-add-to-cart"
+                          >
+                            BUY TICKET
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information-banner__rider">
+                    <div class="name">Ali Imron, 29</div>
+                    <div class="nationality">British Grand Prix, Britain</div>
+                  </div>
+                </div>
+                <div class="arrow--bottom">
+                  <div class="text-center">
+                    <img src="assets/images/arrow-bottom.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <img class="d-block image-banner" src="assets/images/banner-1.png" alt="Banner MotoGP">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="information-banner">
+                  <div class="information-banner__image-circuit">
+                    <div class="image">
+                      <img src="assets/images/sepang-circuit.png" alt="">
+                    </div>
+                  </div>
+                  <div class="information-banner__information">
+                    <div class="row">
+                      <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                        <div class="flag">
+                          <img src="assets/images/malaysia.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                        <div class="description">
+                          <div class="description__title">
+                            Sheel Motorcyle Grand Prix
+                          </div>
+                          <div class="description__time">
+                            04 - 08 November 2018, 07:30PM
+                          </div>
+                          <div class="description__code">
+                            14D 7H 34M 23S
+                          </div>
+                          <button
+                            type="button"
+                            class="btn button--red-dark padding--button"
+                            data-toggle="modal"
+                            data-target="#modal-add-to-cart"
+                          >
+                            BUY TICKET
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="information-banner__rider">
+                    <div class="name">Ali Imron, 29</div>
+                    <div class="nationality">British Grand Prix, Britain</div>
+                  </div>
+                </div>
+                <div class="arrow--bottom">
+                  <div class="text-center">
+                    <img src="assets/images/arrow-bottom.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -92,7 +267,7 @@
     <div class="box-card--news">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <div class="box-card--news__listing">
               <div class="box-image">
                 <div class="box-image__image">
@@ -119,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <div class="box-card--news__listing">
               <div class="box-image">
                 <div class="box-image__image">
@@ -146,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <div class="box-card--news__listing">
               <div class="box-image">
                 <div class="box-image__image">
@@ -173,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <div class="box-card--news__listing">
               <div class="box-image">
                 <div class="box-image__image">
@@ -200,6 +375,12 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="#" class="link--bottom color--grey-medium">
+              View All News
+              <i class="fa fa-play-circle"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -225,7 +406,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -246,7 +427,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -255,7 +441,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -276,7 +462,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -285,7 +476,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -306,7 +497,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -315,7 +511,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -336,7 +532,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -345,7 +546,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -366,7 +567,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -375,7 +581,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="card-ticket--category">
             <div class="card-ticket--category__box-clip">
               &nbsp;
@@ -396,7 +602,12 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <button type="button" class="btn button--red-dark padding--button">
+                    <button
+                      type="button"
+                      class="btn button--red-dark padding--button"
+                      data-toggle="modal"
+                      data-target="#modal-add-to-cart"
+                    >
                       BUY TICKET
                     </button>
                   </div>
@@ -410,7 +621,13 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p class="color--white">There are also available offline at Kitchenette Beachwalk, Bali & Tickets kaufen, France</p>
+          <p class="description color--white">There are also available offline at Kitchenette Beachwalk, Bali & Tickets kaufen, France</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <a href="#" class="link--bottom color--white">
+            View All Category
+            <i class="fa fa-play-circle"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -425,7 +642,7 @@
   <section class="section contacts-app">
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="contacts-app__box-contact">
             <div class="title">Get In Touch</div>
             <div class="subtitle">
@@ -478,7 +695,7 @@
             </form>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="contacts-app__information-contact">
             <p>
               Have an urgent question about an order? Call our Contact Support at <span>+29 928 999 21</span> You can also get in touch on <a href="http://facebook.com">Facebook</a> and <a href="http://twitter.com">Twitter</a>.
@@ -490,6 +707,74 @@
   </section>
   <!-- ./SCOPE CONTACTS -->
 
+  <!-- MODAL ADD TO CART -->
+  <div class="modal fade" id="modal-add-to-cart" tabindex="-1" role="dialog" aria-labelledby="AddToCart" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-add-to-cart">
+          <div id="carousel-modal-cart" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-modal-cart" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-modal-cart" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/image-modal.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/image-modal.jpg" alt="Second slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-modal-cart" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-modal-cart" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <div class="modal-add-to-cart__close-modal" data-dismiss="modal">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="modal-add-to-cart__body">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="title">
+                  Main Grandstand
+                </div>
+                <div class="description">
+                  A Premier Roving ticket grants access to Main Grandstand, Grandstand F and C2 areas but none of the fan zones (ie: Marc Marquez, VR6, etc...). The premier Roving ticket at the malaysian GP is extreamly popular. Sold for just a bit more than a main Grandstand ticket. this Exclusive product allows spectators to sit in the Grandstand of their choice. relishing views of the circuit "a la carte".
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="note">
+                  Please note that children under 2 years old have free grandstand access (not seat allocated) if accompanied by an adult ticket holder.
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 col-xs-12">
+                <div class="price">
+                  $72.00
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-12 col-xs-12">
+                <button
+                  type="button"
+                  class="btn btn-block button--red-dark padding--button"
+                >
+                  ADD TO CART
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ./MODAL ADD TO CART -->
+
   <!-- SCOPE FOOTER -->
   <footer class="footer-app">
     <div class="footer-app__image">
@@ -499,7 +784,34 @@
   </footer>
   <!-- ./SCOPE FOOTER -->
 
+  <!-- SCROLL TO TOP -->
+  <!-- <button id="scroll-to-top">
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </button> -->
+  <!-- ./SCROLL TO TOP -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script>
+    $(document).ready(function (){
+      $("#scroll-to-top").click(function (){
+        $('html, body').animate({
+          scrollTop: $("#top-zero").offset().top
+        }, 2000);
+      });
+    });
+  </script>
+  <script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
     function initMap() {
       var cordinate = {lat: 2.762352, lng: 101.721630};
       var map = new google.maps.Map(

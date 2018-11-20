@@ -1,7 +1,140 @@
 .banner-carousel {
   display: inline-block;
+  width: 100%;
   position: relative;
   z-index: 99;
+
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: inherit;
+    left: inherit;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 3%;
+    margin-left: 15%;
+    list-style: none;
+  
+    .active {
+      background-color: $red-dark;
+    }
+  }
+  
+  .carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.959);
+    margin-bottom: 10px;
+  }
+
+  .image-banner {
+    width: 100%;
+  }
+
+  .information-banner {
+    position: absolute;
+    bottom: 5em;
+    left: 0;
+
+    &__image-circuit {
+      display: inline-block;
+      width: 100%;
+
+      .image {
+        width: 260px;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
+    &__information {
+      display: inline-block;
+      width: 100%;
+
+      .flag {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          display: table;
+        }
+      }
+
+      .description {
+        display: block;
+
+        &__title {
+          font-size: 24px;
+          color: $white;
+          font-weight: 600;
+          line-height: 30px;
+        }
+
+        &__time {
+          font-size: 17px;
+          color: $white;
+          font-weight: 300;
+          line-height: 30px;
+        }
+
+        &__code {
+          font-size: 17px;
+          color: $white;
+          font-weight: 300;
+          line-height: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__rider {
+      position: absolute;
+      right: 0;
+      margin-top: -3em;
+
+      .name {
+        font-size: 14px;
+        color: $white;
+      }
+
+      .nationality {
+        font-size: 16px;
+        color: $white;
+      }
+    }
+  }
+
+  .arrow--bottom {
+    margin-top: -50px;
+    cursor: pointer;
+    
+    img {
+      width: 100px;
+    }
+  }
 }
 
 .section {
@@ -257,6 +390,76 @@
         color: $red-dark;
 
       }
+    }
+  }
+}
+
+.modal-add-to-cart {
+  display: block;
+
+  .carousel-indicators {
+    .active {
+      background-color: $red-dark;
+    }
+  }
+
+  .carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  &__close-modal {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+
+    i {
+      font-size: 2.5em;
+      color: $white;
+    }
+  }
+
+  &__body {
+    background-color: $white;
+    padding: 15px;
+
+    .title {
+      font-size: 22px;
+      color: rgb(94, 94, 94);
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #333;
+      font-weight: 300;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #bbb;
+      font-weight: 300;
+      line-height: 25px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #333;
+      font-weight: 600;
+      text-align: right;
     }
   }
 }

@@ -17,12 +17,11 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+## Spesification Project
+- Node.JS version >8.0.0
+- Javascript Framework Vue.JS
+- Vue CLI 3
+- State Management with Vuex
+- Routing with Vue-Router
+- CSS Framework with Bulma
+- CSS Pre-Proccesor with SCSS

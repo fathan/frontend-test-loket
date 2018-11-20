@@ -1,5 +1,10 @@
 # Frontend Engineer Testing - @Loket.com
 
+## Spesification Server Cloud
+- Digital Ocean Cloud
+- Opearating System with Ubuntu 16.04 LTS
+- Web Server with NGINX
+
 ## Contact Me :
 [![Email](https://img.shields.io/badge/Fathan%20Rohman-Email-yellow.svg?maxAge=3600)](mailto:karir.fathan@gmail.com)
 [![Website](https://img.shields.io/badge/Fathan%20Rohman-Github-black.svg?maxAge=3600)](https://github.com/fathan/)

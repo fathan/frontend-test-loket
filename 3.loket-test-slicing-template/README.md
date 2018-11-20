@@ -11,3 +11,10 @@ npm install
 ```
 gulp serve
 ```
+
+## Spesification Project
+- HTML
+- CSS
+- Javascript
+- CSS Pre-Proccesor with SCSS
+- Bundle File with gulp, gulp-sass, gulp-serve, gulp-sourcemaps

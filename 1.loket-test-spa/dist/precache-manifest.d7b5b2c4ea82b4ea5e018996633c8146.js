@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/img/planets.d28c9986.jpg"
   },
   {
-    "revision": "f09f8e9b2fceb3922bf1",
+    "revision": "59a7195b52fb610bf860",
     "url": "/css/chunk-vendors.8f853227.css"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "/img/films.03a9a1af.jpg"
   },
   {
-    "revision": "6284950f347820e93c2d",
-    "url": "/js/app.1722fd33.js"
+    "revision": "db199fbf2484645c3fd9",
+    "url": "/js/app.a7ea12e5.js"
   },
   {
-    "revision": "f09f8e9b2fceb3922bf1",
-    "url": "/js/chunk-vendors.7520e0e2.js"
+    "revision": "59a7195b52fb610bf860",
+    "url": "/js/chunk-vendors.b72e8fe1.js"
   },
   {
     "revision": "788b92b8c2a275be8271802108b8fcbe",
@@ -44,11 +44,11 @@ self.__precacheManifest = [
     "url": "/img/starships.19706559.jpg"
   },
   {
-    "revision": "b9ec21dfc9ad075d956a53da28c47aec",
+    "revision": "e7a4491de2b30e2961d3d582e1322f5b",
     "url": "/index.html"
   },
   {
-    "revision": "6284950f347820e93c2d",
-    "url": "/css/app.c9f1d38a.css"
+    "revision": "db199fbf2484645c3fd9",
+    "url": "/css/app.20291200.css"
   }
 ];

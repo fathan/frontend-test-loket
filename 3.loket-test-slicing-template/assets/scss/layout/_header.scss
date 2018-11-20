@@ -62,4 +62,12 @@
       }
     }
   }
+
+  &__menu-mobile {
+    display: none;
+  }
+
+  .overlay--menu {
+    display: none;
+  }
 }

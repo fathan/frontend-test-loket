@@ -1,1 +1,73 @@
-@media screen and (max-width: 768px){}
+@media screen and (max-width: 768px){
+  .loket-theme-wrapper{
+    .header-app {
+      &__menu {
+        ul {
+          li {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .banner-carousel {
+      .carousel-item {
+        height: 600px;
+      }
+  
+      .image-banner {
+        width: auto;
+        height: 100%;
+      }
+      
+      .information-banner {
+        bottom: 2em;
+
+        &__image-circuit {
+          .image {
+            width: 150px;
+          }
+        }
+
+        &__information {
+          .flag {
+            margin-top: 9px;
+          }
+
+          .description {
+            &__title {
+              font-size: 20px;
+            }
+
+            &__time {
+              font-size: 14px;
+            }
+
+            &__code {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .title-top--section {
+      &__title {
+        font-size: 1.3em;
+      }
+
+      &__link-action {
+        font-size: 14px;
+        margin-top: 8px;
+      }
+    }
+
+    .box-card--news {
+      &__listing {
+        .container-information {
+          height: 195px;
+        }
+      }
+    }
+  }
+}
