@@ -1,1 +1,11 @@
-@media screen and (max-width: 1200px){}
+@media screen and (max-width: 1200px){
+  .container-home {
+    &__list-action {
+      
+  
+      .listing {
+        width: 48.3333%!important;
+      }
+    }
+  }
+}
