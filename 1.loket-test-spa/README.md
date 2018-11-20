@@ -53,6 +53,9 @@ npm run build
   - Detail: http://loket-frontend-test-spa.fathanrohman.com/vehicle/:id
 ```
 
+## Screenshoot Project
+![alt text](../3.loket-test-slicing-template/assets/images/ss-spa.png)
+
 ## Note:
 If you need someone to ask about this project you can send an email to: karir.fathan@gmail.com
 

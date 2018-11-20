@@ -1,5 +1,9 @@
 # Frontend Engineer Testing - @Loket.com
 
+## Option 2 assigning code from 3 assignments given:
+- [Single Page Application](https://github.com/fathan/frontend-test-loket/tree/master/1.loket-test-spa)
+- [Slicing Template](https://github.com/fathan/frontend-test-loket/tree/master/3.loket-test-slicing-template)
+
 ## Spesification All Projects
 - Server in Digital Ocean - Singapore
 - Operating System with Ubuntu 16.04 LTS
